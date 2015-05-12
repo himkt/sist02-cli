@@ -1,26 +1,91 @@
 # Sist02::Cli
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/sist02/cli`. To experiment with that code, run `bin/console` for an interactive prompt.
+大学のレポート、参考文献を書かなければいけない...  
 
-TODO: Delete this and the text above, and describe your gem
+そんなとき、SIST02を自動的に出力するツールがあったら便利なのでは?  
+
+sist02-cliは、文献情報を自動的にSIST02形式にして出力するサービスです。  
+
 
 ## Installation
 
-Add this line to your application's Gemfile:
+インストールは簡単です。  
+
+Rubyがインストールされていることが条件です。  
+
+ターミナルを開いて、  
 
 ```ruby
-gem 'sist02-cli'
+gem install sist02-cli
 ```
 
-And then execute:
+と入力してsist02-cliをインストールします。  
 
-    $ bundle
+インストールが完了したらターミナルを再起動してください。  
 
-Or install it yourself as:
+ターミナルで
 
-    $ gem install sist02-cli
+```shell
+sist02
+```
+
+と入力して
+
+```shell
+Commands:
+  sist02 cinii_articles NAID  # get cinii articles bibliography
+  sist02 cinii_books NAID     # get cinii books bibliography
+  sist02 help [COMMAND]       # Describe available commands or one specific command
+```
+
+と出力されればインストール成功です。インストールに失敗した場合はお手数ですが[松之木](https://twitter.com/himkt)までご連絡ください。
 
 ## Usage
+
+現在はCiNii articles(論文)とCiNii books(図書)に対応しています。  
+
+### CiNii articles
+
+例えば[こちらの論文](http://ci.nii.ac.jp/naid/40020423125)を引用したいとします。  
+
+この論文のNAIDは40020423125です。  
+
+従って、ターミナルに
+
+```shell
+sist02 cinii_articles 40020423125
+```
+
+と入力してください。  
+
+```shell
+森田 倫子. 食料自給率と新たな指標 : 平成19年以降の動向と食料自給力の指標化. 調査と情報. 2015, vol. , no. 864, p. 巻頭1p,1-14.
+```
+
+と出力されれば成功です。
+
+
+### CiNii books
+
+例えば[こちらの図書](http://ci.nii.ac.jp/ncid/BB18507477)を引用したいとします。  
+
+この論文のNCIDはBB18507477です。  
+
+従って、ターミナルに
+
+```shell
+sist02 cinii_books BB18507477
+```
+
+と入力してください。  
+
+```shell
+まちライブラリー, マイクロ・ライブラリーサミット実行委員会, 礒井純充. マイクロ・ライブラリー : 人とまちをつなぐ小さな図書館. 学芸出版社, 2015, 238p.
+```
+
+と出力されれば成功です。
+
+
 
 TODO: Write usage instructions here
 

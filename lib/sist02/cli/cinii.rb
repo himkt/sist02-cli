@@ -33,7 +33,7 @@ module Sist02
         return result
       end
 
-      desc "cinii_books NAID", "get cinii books bibliography"
+      desc "cinii_books NCID", "get cinii books bibliography"
       def cinii_books(ncid)
         begin
           html = open("http://ci.nii.ac.jp/ncid/#{ncid}.json").read
