@@ -34,7 +34,7 @@ sist02
 ```shell
 Commands:
   sist02 cinii_articles NAID  # get cinii articles bibliography
-  sist02 cinii_books NAID     # get cinii books bibliography
+  sist02 cinii_books NCID     # get cinii books bibliography
   sist02 help [COMMAND]       # Describe available commands or one specific command
 ```
 
@@ -53,13 +53,13 @@ Commands:
 従って、ターミナルに
 
 ```shell
-sist02 cinii_articles 40020423125
+sist02 cinii_articles 110009886645
 ```
 
 と入力してください。  
 
 ```shell
-森田 倫子. 食料自給率と新たな指標 : 平成19年以降の動向と食料自給力の指標化. 調査と情報. 2015, vol. , no. 864, p. 巻頭1p,1-14.
+粟津 妙華, 高田 雅美, 城 和貴. 活字データの分類を用いた進化計算による近代書籍からのルビ除去. 情報処理学会論文誌. 数理モデル化と応用. 2015, vol. 8, no. 1, p. 72-79.
 ```
 
 と出力されれば成功です。
