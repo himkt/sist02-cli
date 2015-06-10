@@ -95,7 +95,7 @@ sist02 cinii_books BB18507477
 従って、ターミナルに
 
 ```shell
-sist02 cinii_d_papers 500000587337
+sist02 cinii_theses 500000587337
 ```
 
 と入力してください。  

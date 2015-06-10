@@ -19,10 +19,10 @@ module Sist02
         return Sist02::CiNii.book_ref(ncid)
       end
 
-      desc "cinii_d_papers NAID", "get a doctoral thesis bibliography"
-      def cinii_d_papers(naid)
-        puts Sist02::CiNii.d_paper_ref(naid)
-        return Sist02::CiNii.d_paper_ref(naid)
+      desc "cinii_theses NAID", "get a doctoral thesis bibliography"
+      def cinii_theses(naid)
+        puts Sist02::CiNii.thesis_ref(naid)
+        return Sist02::CiNii.thesis_ref(naid)
       end
     end
   end
