@@ -33,9 +33,10 @@ sist02
 
 ```shell
 Commands:
-  sist02 cinii_articles NAID  # get cinii articles bibliography
-  sist02 cinii_books NCID     # get cinii books bibliography
-  sist02 help [COMMAND]       # Describe available commands or one specific command
+  sist02 cinii_articles NAID       # get a cinii articles bibliography
+  sist02 cinii_books NCID          # get a cinii books bibliography
+  sist02 cinii_dissertations NAID  # get a doctoral dissertations bibliography
+  sist02 help [COMMAND]            # Describe available commands or one speci...
 ```
 
 と出力されればインストール成功です。インストールに失敗した場合はお手数ですが[松之木](https://twitter.com/himkt)までご連絡ください。
@@ -95,7 +96,7 @@ sist02 cinii_books BB18507477
 従って、ターミナルに
 
 ```shell
-sist02 cinii_theses 500000587337
+sist02 cinii_dissertations 500000587337
 ```
 
 と入力してください。  
