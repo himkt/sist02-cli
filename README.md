@@ -1,11 +1,29 @@
 # Sist02::Cli
 
+[![MIT License](http://img.shields.io/badge/license-MIT-blue.svg?style=flat)](LICENSE)
+[![Website](https://img.shields.io/website-up-down-green-red/http/shields.io.svg?maxAge=2592000)](https://rubygems.org/gems/sist02-cli)
+[![GitHub issues](https://img.shields.io/github/issues/himkt/sist02-cli.svg)](https://github.com/himkt/sist02-cli/issues)
+[![GitHub stars](https://img.shields.io/github/stars/himkt/sist02-cli.svg)](https://github.com/himkt/sist02-cli/stargazers) 
+[![GitHub release](https://img.shields.io/github/release/qubyte/rubidium.svg?maxAge=2592000)](https://github.com/himkt/sist02-cli) 
+[![GitHub commits](https://img.shields.io/github/commits-since/SubtitleEdit/subtitleedit/3.4.7.svg?maxAge=2592000)](https://github.com/himkt/sist02-cli)
+
 大学のレポート、参考文献を書かなければいけない...  
 
 そんなとき、SIST02を自動的に出力するツールがあったら便利なのでは?  
 
-sist02-cliは、文献情報を自動的にSIST02形式にして出力するサービスです。  
+sist02-cliは、文献情報を自動的にSIST02形式にして出力するツールです。  
 
+## Related works
+
+- https://github.com/himkt/sist02
+
+文献情報をSIST02形式に変換するプログラムです．変換誤りがあった場合はこちらのissueにご報告ください．
+
+- https://github.com/himkt/sist02-web
+
+Webインターフェースを提供しています．
+
+[こちら](https://sist02-web.herokuapp.com/)でご利用いただけます．
 
 ## Installation
 
@@ -39,7 +57,7 @@ Commands:
   sist02 help [COMMAND]            # Describe available commands or one speci...
 ```
 
-と出力されればインストール成功です。インストールに失敗した場合はお手数ですが[松之木](https://twitter.com/himkt)までご連絡ください。
+と出力されればインストール成功です。インストールに失敗した場合はお手数ですが[作者](https://twitter.com/himkt)までご連絡ください。
 
 ## Usage
 
